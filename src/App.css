@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.LinkStyle{
+  text-decoration: none;
+  color: white;
+}
