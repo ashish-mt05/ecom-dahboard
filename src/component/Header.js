@@ -7,6 +7,7 @@ import Login from './Login';
 import Register from './Register';
 import ForgotPassword from './ForgotPassword';
 import SecureRouting from './SecureRouting';
+import DisplayProduct from './DisplayProduct';
 
 export default function Header() {
   return (
@@ -18,6 +19,7 @@ export default function Header() {
     <BrowserRouter>
       <NavBar />
       <Routes>
+      <Route path="/display" element={<SecureRouting component={DisplayProduct} />}/>
         <Route path="/addproduct" element={<SecureRouting component={AddProduct} />}/>
         <Route path="/updateproduct" element={<SecureRouting component={UpdateProduct} />}/>
         <Route path="/login" element={<Login />}/>
